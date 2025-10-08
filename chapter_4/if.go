@@ -1,0 +1,13 @@
+package main
+import "fmt"
+
+func main() {
+  for i:=1; i<=10; i+=1 {
+    fmt.Print(i)
+    if i % 2 == 0 {
+      fmt.Println(" even")
+    } else {
+      fmt.Println(" odd")
+    }
+  }
+}
