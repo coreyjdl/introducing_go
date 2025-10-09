@@ -12,10 +12,10 @@ func main() {
   x[4] = 55
 
   var total float64 = 0
-  for i:=0; i<5;  i+=1 {
-	total += x[i]
+  for _, value := range x {
+	total += x[value]
 	}
 
-  fmt.Println(total /5)
+  fmt.Println(total / float64(len(x)))
 }
 
